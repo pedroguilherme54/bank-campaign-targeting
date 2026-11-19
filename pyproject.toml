@@ -1,5 +1,5 @@
 [project]
-name = "monitor"
+name = "bank-marketing"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -8,15 +8,17 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
-    "duckdb>=2.0.0",
+    "joblib>=1.6.0",
     "pandas>=3.1.1",
+    "plotly>=7.1.0",
     "pyarrow>=26.0.1",
     "pyyaml>=6.0.3",
-    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "streamlit>=1.67.0",
 ]
 
 [project.scripts]
-monitor = "monitor:main"
+bank-marketing = "bank_marketing:main"
 
 [build-system]
 requires = ["uv_build>=0.13.9,<0.14.0"]

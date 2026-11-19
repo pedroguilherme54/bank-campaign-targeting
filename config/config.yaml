@@ -1,0 +1,20 @@
+# Configuração do projeto. Nada disto deve estar escrito à mão no código.
+
+caminhos:
+  dados_raw: data/raw/bank-additional-full.csv
+  dados_processados: data/processed
+  modelos: models
+
+# Seed para todos os random_state (reprodutibilidade)
+seed: 42
+
+# Variáveis excluídas do modelo final
+# duration: só se conhece depois da chamada -> fuga de informação (ver CLAUDE.md, secção 2)
+variaveis_excluidas:
+  - duration
+
+# Parâmetros do simulador de campanha (valores HIPOTÉTICOS, a definir na Fase 4)
+simulador:
+  custo_por_chamada_eur: null
+  valor_subscricao_eur: null
+  capacidade_chamadas: null

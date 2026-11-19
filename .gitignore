@@ -11,5 +11,4 @@ wheels/
 
 # Dados (gerados pelo pipeline; não versionar)
 data/raw/
-data/staging/
-data/warehouse/
+data/processed/
